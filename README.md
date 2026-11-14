@@ -1,7 +1,7 @@
 # Modrinth's AI policy, applied twice
 
 A single static page documenting one submission refused under Modrinth's AI policy (Content Rules §6.2b
-for content and §6.2a for the icon), set against eighteen public projects that disclose the same or
+for content and §6.2a for the icon), set against seventeen public projects that disclose the same or
 heavier AI use and were approved after the policy's grace period ended on 27 September 2026.
 
 Independent; not affiliated with or endorsed by Modrinth. No moderators are named.

@@ -53,7 +53,7 @@ IMAGES = [
 # in-mod art (textures), not page images: relevant to the content ground, found in gate.db, live-checked 2026-11-14
 TEXTURES = [
     ("Ta6w7RkG", "mystical-agriculture-plus", "Mystical Agriculture Plus", "2026-09-15", "2026-10-23", 393, "grace",
-     "The code, textures (pixel art drawn by scripts, some recoloured from Mystical Agriculture's) and language files were made with an AI coding assistant. All the ideas are mine, not the AI's: every feature, mechanic and balance choice comes from me. I also test every feature in-game myself.",
+     "The code, textures (pixel art drawn by scripts, some recoloured from Mystical Agriculture's) and language files were made with an AI coding assistant. All the ideas are mine, not the AI's: every feature, mechanic and balance choice comes from me. I also test every feature in-game myself: I find the bugs, report them and check the fixes before each release.",
      "Ta6w7RkG/fd07829faac4957d21da716e665b2ac3601ad32a_96.webp"),
     ("EjWZNjOK", "imeinputbackport", "IMEInputBackport", "2026-08-19", "2026-10-21", 92, "grace",
      "Example assets used Claude to generate a script to generate the textures.",
@@ -108,7 +108,7 @@ PAGE = f"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Modrinth AI Policy: Uneven Enforcement</title>
-<meta name="description" content="A submission refused under Modrinth's AI policy, set against 18 projects disclosing the same or more that were approved after the grace period. Independent; not affiliated with Modrinth.">
+<meta name="description" content="A submission refused under Modrinth's AI policy, set against 17 projects disclosing the same or more that were approved after the grace period. Independent; not affiliated with Modrinth.">
 <link rel="icon" href="data:image/svg+xml,{LOGO.format(s=32).replace('var(--brand)', '%231bd96a').replace('var(--brand-ink)', '%23000').replace('"', "'").replace('<', '%3C').replace('>', '%3E')}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -255,7 +255,7 @@ footer.card p {{ margin: .35rem 0; }}
       <span class="pill pill-rejected">refused 2026-11-09 after 38.4 h</span>
       <span class="pill pill-red">§6.2b: no evidence cited</span>
       <span class="pill pill-red">§6.2a: icon</span>
-      <span class="pill pill-approved">18 comparable projects approved after the deadline</span>
+      <span class="pill pill-approved">17 comparable projects approved after the deadline</span>
     </div>
   </section>
 
@@ -267,10 +267,13 @@ footer.card p {{ margin: .35rem 0; }}
     <blockquote class="mod"><p><b>§6.2b</b> “…this project is not suitable to be published publicly on Modrinth. If you believe this is incorrect, please provide
     significant evidence that your project consists of primarily non-AI-generated content. Otherwise, we ask that you <strong>do not resubmit</strong>.”</p>
     <p><b>§6.2a</b> “…images created or significantly altered with AI are not permitted… Please remove the following AI images: Project icon.”</p></blockquote>
-    <p>The §6.2b issue cites <strong>no evidence</strong> (<code>locations: []</code>), while the §6.2a issue names its asset. Because §6.2b also asks me not to
+    <p>The §6.2a message names and links the image it objects to. The §6.2b message <strong>cites no evidence</strong>: no file, passage or excerpt
+    (both issues carry an empty <code>locations</code> field). Because §6.2b also asks me not to
     resubmit, replacing the icon cannot bring the project back. The project page’s own banner says the opposite:
     <q>Please address all moderation concerns, including any issues listed in messages below, before resubmitting this project.</q></p>
     <p class="note">Issue text quoted from the moderation record as captured 2026-11-10 03:47 UTC; banner text as shown on the project page on 2026-11-14.
+    “§6.2a” and “§6.2b” are the labels used in the moderation messages; the rules page itself has one §6.2. Note that §6.1 <em>requires</em> disclosure when
+    “a substantial portion of the project's code is a product of AI output”, so substantial AI code is allowed; only content “primarily or entirely” from AI is not.
     Rule text: <a href="http://web.archive.org/web/20261102101459/https://modrinth.com/legal/rules" rel="noopener">Content Rules §6, archived 2 Nov 2026</a>
     (unchanged since added; <a href="http://web.archive.org/web/20260802000307/https://modrinth.com/legal/rules" rel="noopener">absent on 2 Aug</a>).
     Grace period: <a href="https://modrinth.com/news/article/ai-policy-and-disclosures/" rel="noopener">policy announcement</a>.</p>
@@ -286,7 +289,7 @@ footer.card p {{ margin: .35rem 0; }}
       {vs(CDN + map_[8], "Mystical Agriculture Plus", "pill-approved", "approved 2026-10-23", map_[7])}
       {vs(None, "My submission", "pill-rejected", "refused 2026-11-09", MY_CODE + " " + MY_ICON)}
     </div>
-    <h3>Authors saying AI wrote most or all of the code, approved after the deadline</h3>
+    <h3>Code written with AI, in the authors’ own words, approved after the deadline</h3>
     <div class="rows">{code_rows}
     </div>
     <h3>In-mod art from AI or AI-written scripts</h3>
@@ -311,14 +314,15 @@ footer.card p {{ margin: .35rem 0; }}
   <section class="card" id="numbers">
     <h2>4. The numbers</h2>
     <div class="stats">
-      <div class="stat"><b>929</b><span>AI-disclosing projects published after the deadline</span></div>
-      <div class="stat hl"><b>926</b><span>of them approved</span></div>
-      <div class="stat hl"><b>45 / 45</b><span>saying AI wrote most or all code: approved</span></div>
+      <div class="stat"><b>924</b><span>AI-disclosing projects approved after the deadline</span></div>
+      <div class="stat hl"><b>921</b><span>of them still public (3 archived)</span></div>
+      <div class="stat hl"><b>10</b><span>say AI wrote, or was used for, most or all of their code: all public</span></div>
       <div class="stat"><b>47.1%</b><span>of AI disclosures have no explanation</span></div>
-      <div class="stat"><b>38.4 h</b><span>my review; median 179 h, 740 approved faster</span></div>
+      <div class="stat"><b>38.4 h</b><span>my review; median 179.1 h; 740 approved faster</span></div>
     </div>
-    <p class="note">From all 4,861 projects in Modrinth’s AI-disclosure system. Only public projects are visible, so this shows no rejection rate; it shows
-    that projects disclosing what I disclosed are public.</p>
+    <p class="note">From a collected set of 4,861 public Modrinth projects with content disclosures (4,831 of them disclosing AI), as of 2026-11-10.
+    “After the deadline” means approved on or after 28 September 2026. The 10 were found by reading every candidate statement by hand.
+    Only public projects are visible, so this shows no rejection rate; it shows that projects disclosing what I disclosed are public.</p>
   </section>
 
   <section class="card" id="ask">
@@ -334,9 +338,9 @@ footer.card p {{ margin: .35rem 0; }}
 
   <section class="card" id="method">
     <h2>6. Method and limits</h2>
-    <p>Disclosures (flags and notes) for every project in Modrinth’s AI-disclosure system, with <code>published</code> (created) and <code>approved</code>
-    (went public) from the public API. Collected and classified with help from AI tools; every project cited here was checked by hand and was
-    <code>approved</code> on 2026-11-14. Only projects approved after 27 September 2026 are cited. No moderator is named, and none should be sought;
+    <p>Disclosures (flags and notes) for a collected set of 4,861 public projects, with <code>published</code> (created) and <code>approved</code>
+    (went public) from the public API, as of 2026-11-10. Collected and classified with help from AI tools; every project cited here was re-checked by hand
+    against the live API on 2026-11-14: <code>approved</code>, dates as shown, quote present word for word. Only projects approved after 27 September 2026 are cited. No moderator is named, and none should be sought;
     I claim inconsistency, not bad faith.</p>
     <ul class="links">
       <li><a href="evidence/corpus_ledger.csv">corpus_ledger.csv</a>: all 4,831 AI-disclosing projects</li>
@@ -360,8 +364,8 @@ footer.card p {{ margin: .35rem 0; }}
       <dt>Grounds</dt><dd>§6.2b + §6.2a</dd>
       <dt>Evidence cited</dt><dd>none</dd>
       <dt>Grace ended</dt><dd>2026-09-27</dd>
-      <dt>Approved after it</dt><dd>926 of 929</dd>
-      <dt>“AI wrote most code”</dt><dd>45 of 45</dd>
+      <dt>Approved after it</dt><dd>924</dd>
+      <dt>“AI wrote most code”</dt><dd>10, all public</dd>
       <dt>Same icon method</dt><dd>approved</dd>
     </dl>
   </section>
