@@ -1,0 +1,18 @@
+{
+ "corpus_size": 4861,
+ "disclose_ai_creation": 4831,
+ "post_grace_ai_projects": 929,
+ "post_grace_approved": 926,
+ "post_grace_archived": 3,
+ "post_grace_rejected": 0,
+ "notes_asserting_ai_wrote_most_or_all_code": 45,
+ "of_those_approved": 45,
+ "ai_disclosures_with_no_note": 2274,
+ "ai_disclosure_note_rate_pct": 47.1,
+ "median_review_hours": 179.1,
+ "my_review_hours": 38.4,
+ "my_percentile": 15.6,
+ "approved_faster_than_my_rejection": 740,
+ "source": "Modrinth public API v2/v3 + /v3/project/{id}/disclosures, captured 2026-11-14",
+ "note": "The corpus contains only public projects; rejected submissions are not reachable through the API."
+}
