@@ -269,8 +269,9 @@ footer.card p {{ margin: .35rem 0; }}
     <p><b>§6.2a</b> “…images created or significantly altered with AI are not permitted… Please remove the following AI images: Project icon.”</p></blockquote>
     <p>The §6.2a message names and links the image it objects to. The §6.2b message <strong>cites no evidence</strong>: no file, passage or excerpt
     (both issues carry an empty <code>locations</code> field). Because §6.2b also asks me not to
-    resubmit, replacing the icon cannot bring the project back. The project page’s own banner says the opposite:
-    <q>Please address all moderation concerns, including any issues listed in messages below, before resubmitting this project.</q></p>
+    resubmit, replacing the icon cannot bring the project back. The project page’s own “Changes requested” banner says the opposite, with a warning attached:
+    <q>Please address all moderation concerns, including any issues listed in messages below, before resubmitting this project.
+    Repeatedly submitting your project without addressing all moderation concerns first may result in account suspension.</q></p>
     <p class="note">Issue text quoted from the moderation record as captured 2026-11-10 03:47 UTC; banner text as shown on the project page on 2026-11-14.
     “§6.2a” and “§6.2b” are the labels used in the moderation messages; the rules page itself has one §6.2. Note that §6.1 <em>requires</em> disclosure when
     “a substantial portion of the project's code is a product of AI output”, so substantial AI code is allowed; only content “primarily or entirely” from AI is not.
