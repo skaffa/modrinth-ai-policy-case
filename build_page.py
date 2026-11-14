@@ -184,6 +184,9 @@ blockquote.mod {{ border-left-color: var(--red); }}
 .vs-col header img, .me {{ width: 28px; height: 28px; border-radius: var(--r-sm); background: var(--button); flex: none; }}
 .me {{ display: inline-flex; align-items: center; justify-content: center; font-weight: 800; color: var(--secondary); }}
 .vs-col p {{ margin: 0; font-size: .9rem; color: var(--contrast); }}
+.mine {{ margin: .6rem 0; }}
+.mine .vs-col {{ border-left: 3px solid var(--red); }}
+.match {{ margin: .35rem .2rem 0; font-size: .8rem; color: var(--secondary); }}
 
 .rows {{ display: flex; flex-direction: column; gap: .35rem; margin: .5rem 0; }}
 .row {{ display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: .75rem; align-items: center; background: var(--raised-2);
@@ -282,13 +285,12 @@ footer.card p {{ margin: .35rem 0; }}
 
   <section class="card" id="code">
     <h2><span class="tag">§6.2b</span>2. Code: the same disclosure, approved</h2>
+    <div class="mine">{vs(None, "My submission", "pill-rejected", "refused 2026-11-09", MY_CODE + " " + MY_ICON)}</div>
     <div class="vs">
-      {vs(CDN + back[8], "Backrooms", "pill-approved", "approved 2026-10-31", back[7])}
-      {vs(None, "My submission", "pill-rejected", "refused 2026-11-09", MY_CODE)}
-    </div>
-    <div class="vs">
-      {vs(CDN + map_[8], "Mystical Agriculture Plus", "pill-approved", "approved 2026-10-23", map_[7])}
-      {vs(None, "My submission", "pill-rejected", "refused 2026-11-09", MY_CODE + " " + MY_ICON)}
+      <div>{vs(CDN + back[8], "Backrooms", "pill-approved", "approved 2026-10-31", back[7])}
+      <p class="match">Same: Claude, most of the code, page text, assets, human direction and review.</p></div>
+      <div>{vs(CDN + map_[8], "Mystical Agriculture Plus", "pill-approved", "approved 2026-10-23", map_[7])}
+      <p class="match">Same: AI-written code, pixel art drawn by AI-written scripts, author’s design and in-game testing.</p></div>
     </div>
     <h3>Code written with AI, in the authors’ own words, approved after the deadline</h3>
     <div class="rows">{code_rows}
@@ -303,7 +305,7 @@ footer.card p {{ margin: .35rem 0; }}
     <h2><span class="tag">§6.2a</span>3. Icon: the same method, approved</h2>
     <div class="vs">
       {vs(CDN + uhc[8], "UHC Prime", "pill-approved", "approved 2026-10-11", uhc[7])}
-      {vs(None, "My submission", "pill-rejected", "icon refused 2026-11-09", MY_ICON)}
+      {vs(None, "My submission", "pill-rejected", "icon refused 2026-11-09", "… " + MY_ICON)}
     </div>
     <p>Nexora Players (<q>{e(nexora[7])}</q>, about its icon) was approved on <strong>8 November, the day before</strong>.
     If an image drawn by an AI-written script is an AI image, these are too; if not, mine was refused in error.</p>

@@ -80,6 +80,9 @@ blockquote.mod { border-left-color: var(--red); }
 .vs-col header img, .me { width: 28px; height: 28px; border-radius: var(--r-sm); background: var(--button); flex: none; }
 .me { display: inline-flex; align-items: center; justify-content: center; font-weight: 800; color: var(--secondary); }
 .vs-col p { margin: 0; font-size: .9rem; color: var(--contrast); }
+.mine { margin: .6rem 0; }
+.mine .vs-col { border-left: 3px solid var(--red); }
+.match { margin: .35rem .2rem 0; font-size: .8rem; color: var(--secondary); }
 
 .rows { display: flex; flex-direction: column; gap: .35rem; margin: .5rem 0; }
 .row { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: .75rem; align-items: center; background: var(--raised-2);
@@ -178,13 +181,12 @@ footer.card p { margin: .35rem 0; }
 
   <section class="card" id="code">
     <h2><span class="tag">§6.2b</span>2. Code: the same disclosure, approved</h2>
+    <div class="mine"><div class="vs-col"><header><span class="me" aria-hidden="true">?</span><b>My submission</b><span class="pill pill-rejected">refused 2026-11-09</span></header><p>“[This project] was made together with Claude (Anthropic). Most of the code, the documentation and this page’s text were written by Claude under my direction, and I tested everything in game. The pixel-art icon was drawn by a small script Claude wrote, not by an image generator.”</p></div></div>
     <div class="vs">
-      <div class="vs-col"><header><img src="https://cdn.modrinth.com/data/MrC0PXcn/eb80a5fa3e4a9c9b9974f9c82dfbb1b0c4261741_96.webp" alt=""><b>Backrooms</b><span class="pill pill-approved">approved 2026-10-31</span></header><p>“Most of the code, the placeholder textures and sounds, and this page’s text were written with an AI assistant (Claude) under the author’s direction and review.”</p></div>
-      <div class="vs-col"><header><span class="me" aria-hidden="true">?</span><b>My submission</b><span class="pill pill-rejected">refused 2026-11-09</span></header><p>“[This project] was made together with Claude (Anthropic). Most of the code, the documentation and this page’s text were written by Claude under my direction, and I tested everything in game.”</p></div>
-    </div>
-    <div class="vs">
-      <div class="vs-col"><header><img src="https://cdn.modrinth.com/data/Ta6w7RkG/fd07829faac4957d21da716e665b2ac3601ad32a_96.webp" alt=""><b>Mystical Agriculture Plus</b><span class="pill pill-approved">approved 2026-10-23</span></header><p>“The code, textures (pixel art drawn by scripts, some recoloured from Mystical Agriculture&#x27;s) and language files were made with an AI coding assistant. All the ideas are mine, not the AI&#x27;s: every feature, mechanic and balance choice comes from me. I also test every feature in-game myself: I find the bugs, report them and check the fixes before each release.”</p></div>
-      <div class="vs-col"><header><span class="me" aria-hidden="true">?</span><b>My submission</b><span class="pill pill-rejected">refused 2026-11-09</span></header><p>“[This project] was made together with Claude (Anthropic). Most of the code, the documentation and this page’s text were written by Claude under my direction, and I tested everything in game. The pixel-art icon was drawn by a small script Claude wrote, not by an image generator.”</p></div>
+      <div><div class="vs-col"><header><img src="https://cdn.modrinth.com/data/MrC0PXcn/eb80a5fa3e4a9c9b9974f9c82dfbb1b0c4261741_96.webp" alt=""><b>Backrooms</b><span class="pill pill-approved">approved 2026-10-31</span></header><p>“Most of the code, the placeholder textures and sounds, and this page’s text were written with an AI assistant (Claude) under the author’s direction and review.”</p></div>
+      <p class="match">Same: Claude, most of the code, page text, assets, human direction and review.</p></div>
+      <div><div class="vs-col"><header><img src="https://cdn.modrinth.com/data/Ta6w7RkG/fd07829faac4957d21da716e665b2ac3601ad32a_96.webp" alt=""><b>Mystical Agriculture Plus</b><span class="pill pill-approved">approved 2026-10-23</span></header><p>“The code, textures (pixel art drawn by scripts, some recoloured from Mystical Agriculture&#x27;s) and language files were made with an AI coding assistant. All the ideas are mine, not the AI&#x27;s: every feature, mechanic and balance choice comes from me. I also test every feature in-game myself: I find the bugs, report them and check the fixes before each release.”</p></div>
+      <p class="match">Same: AI-written code, pixel art drawn by AI-written scripts, author’s design and in-game testing.</p></div>
     </div>
     <h3>Code written with AI, in the authors’ own words, approved after the deadline</h3>
     <div class="rows">
@@ -259,7 +261,7 @@ footer.card p { margin: .35rem 0; }
     <h2><span class="tag">§6.2a</span>3. Icon: the same method, approved</h2>
     <div class="vs">
       <div class="vs-col"><header><img src="https://cdn.modrinth.com/data/nVj3rQLV/c1f836b76d5390b65135e03fa9d1c0b55ed9eb19_96.webp" alt=""><b>UHC Prime</b><span class="pill pill-approved">approved 2026-10-11</span></header><p>“the scripts that draw the icon and banners were written with the help of AI (Claude)”</p></div>
-      <div class="vs-col"><header><span class="me" aria-hidden="true">?</span><b>My submission</b><span class="pill pill-rejected">icon refused 2026-11-09</span></header><p>“The pixel-art icon was drawn by a small script Claude wrote, not by an image generator.”</p></div>
+      <div class="vs-col"><header><span class="me" aria-hidden="true">?</span><b>My submission</b><span class="pill pill-rejected">icon refused 2026-11-09</span></header><p>“… The pixel-art icon was drawn by a small script Claude wrote, not by an image generator.”</p></div>
     </div>
     <p>Nexora Players (<q>image generation python code is ai assisted</q>, about its icon) was approved on <strong>8 November, the day before</strong>.
     If an image drawn by an AI-written script is an AI image, these are too; if not, mine was refused in error.</p>
